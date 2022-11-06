@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function validatePassword(){
+            var pw1 = document.getElementById("first").value;
+            var pw2 = document.getElementById("second").value;
+
+            if(pw1 != pw2){
+                document.getElementById("message").innerHTML="Passwords do not match";
+                return false;
+            }
+                
+            if(pw1.length < 8 || pw2.length < 8){
+                document.getElementById("message").innerHTML="Password must be at least 8 characters long";
+                return false;
+            }
+
+            if(pw1 == pw2 && pw1.length >= 8){
+                document.getElementById("message").innerHTML="Valid password!"
+                return false;
+            }
+        }
+    </script>
+    <title>
+        Exercise 1
+    </title>
+    <body>
+        <p>
+            Exercise 1
+        </p>
+        <form onsubmit="return validatePassword()">
+            <input type="password" id="first" value="">
+            <br><br>
+            <input type="password" id="second" value="">
+            <br><br>
+            <input type="submit" value="Validate">
+            <br><br>
+            <span id="message"</span>
+        </form>
+
+    </body>
+</html>
