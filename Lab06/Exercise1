@@ -1,0 +1,25 @@
+<?php
+	print"<table border=\"1\" style ='border-collapse: collapse'>";
+
+	print"<tr>";
+	print"<td>0</td> \n";
+	for($i = 1; $i <= 100; $i++){
+		print"<td>$i</td> \n";
+	}
+	print"</tr>";
+
+	for($j = 1; $j <= 100; $j++){
+		print "<tr> \n";
+		print"<td>$j</td>";
+
+		for($k = 1; $k <= 100; $k++){
+			$p = $j*$k;
+			print"<td>$p</td> \n";
+		}
+
+		print"</tr>";
+	}
+
+	
+	print"</table>";
+?>
