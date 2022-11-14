@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Lab04 Exercise 3</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="formChecker.js"></script>
+</head>
+<body>
+
+<table align="center" border=1>
+<form name ="cart" action = "customerBackend.php" method="post" onsubmit="return validateForm()">
+<tr>
+<td>Item/Price</td>
+<td>Image</td>
+<td>Enter Quantity Below</td>
+</tr>
+
+
+<tr>
+<td>1923 Widenhouse Violin - $359,000</td>
+<td><img src = "images/image1.png"></td>
+<td><input type ="number" name="violin"></td>
+</tr>
+
+<tr>
+<td>2022 Eastman Viola - $3000</td>
+<td><img src = "images/image2.png"></td>
+<td><input type ="number" name="viola"></td>
+</tr>
+
+<tr>
+<td>Amazon Cello - $200</td>
+<td><img src = "images/image3.png"></td>
+<td><input type ="number" name="cello"></td>
+</tr>
+
+
+
+<tr><td colspan = "3" class="inputForm">Shipping:</td></tr>
+
+<tr><td colspan = "3" class="inputForm"><input type="radio" name = "ship" value = "free" id="free">F>
+<tr><td colspan = "3" class="inputForm"><input type="radio" name = "ship" value = "overnight" id="ov>
+<tr><td colspan = "3" class="inputForm"><input type="radio" name = "ship" value = "three day" id = ">
+
+<tr><td>Username:</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr><td>Password:</td>
+<td><input type="text" name="password"></td>
+</tr>
+  
+<tr><td><input type="submit" name="submit" value = "Submit"></td></tr>
+<tr><td><button type="reset" value="Reset">Reset</button>
+</form>
+</table>
+
+</body>
+
+</html>
